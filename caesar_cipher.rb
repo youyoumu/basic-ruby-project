@@ -1,7 +1,7 @@
 def caesar_cipher(string, shift_factor = 3)
     print "Input: "
     p string
-    print "Shift Factor: " 
+    print "Shift Factor: "
     puts shift_factor
     string = string.split("")
 
@@ -10,7 +10,7 @@ def caesar_cipher(string, shift_factor = 3)
             char = char.ord
             char += shift_factor
             char -= 26 if char > 90
-            char += 26 if char < 65 
+            char += 26 if char < 65
             char.chr
         elsif char.ord >= 97 && char.ord <= 122
             char = char.ord
@@ -28,7 +28,3 @@ def caesar_cipher(string, shift_factor = 3)
     p string
     string
 end
-
-caesar_cipher("abcdefgABCDEFGz!@#$%^&*()")
-caesar_cipher("TheUnRealestTommy")
-caesar_cipher(":meesestare:")
